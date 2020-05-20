@@ -55,7 +55,7 @@ end
 def reduce_to_all_true(array)
     counter = 0 
     while counter < array.size do 
-      return false if |e| e == "false" 
+      return false if array.any? == "false" 
     counter += 1
     end
     return true
